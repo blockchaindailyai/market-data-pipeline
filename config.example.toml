@@ -1,0 +1,34 @@
+# Copy to config.toml for local settings. No API keys are required.
+# Daily data only; start small and respect provider access restrictions.
+timeframe = "1d"
+tickers = ["BTC/USDT", "ETH/USDT"]
+source_exchanges = ["binance", "mexc"]
+start_date = "2024-01-01"
+output_date_format = "%m/%d/%Y"
+output_dir = "data"
+stock_output_dir = "korean_stock_data"
+source_memory_file = "exchange_memory.json"
+page_limit = 1000
+max_workers = 2
+source_selection_workers = 2
+retry_count = 3
+retry_delay_seconds = 2
+incremental_overlap_days = 7
+max_stale_days = 2
+mexc_force_end_time = true
+mexc_longer_history_threshold_days = 30
+price_decimal_places = 8
+price_scale_threshold = "0.0001"
+fail_on_verification_errors = true
+
+# Stocks are opt-in. For a small watchlist, add e.g. "005930.KS".
+stock_universe = "configured"
+stock_tickers = []
+stock_data_providers = ["naver", "yahoo"]
+stock_max_workers = 2
+stock_request_delay_seconds = 1
+stock_universe_refresh = true
+stock_universe_top_n = 500
+stock_universe_min_symbols = 500
+stock_universe_cache_file = "korean_stock_tickers.json"
+naver_history_count = 10000
