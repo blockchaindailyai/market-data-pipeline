@@ -1,8 +1,10 @@
-# TradeStation Crypto Data
+# Market Data Pipeline for TradeStation
 
 A Python daily OHLCV scraper and CSV preparation tool for TradeStation workflows. It fetches spot cryptocurrency candles through CCXT and includes optional Korean stock adapters for Naver and Yahoo Finance. It does not place orders or connect to a TradeStation brokerage account.
 
 This source-only edition excludes generated market datasets, logs, caches, local configuration and compiled executables. No historical dataset or coverage guarantee is included.
+
+Repository: [blockchaindailyai/market-data-pipeline](https://github.com/blockchaindailyai/market-data-pipeline)
 
 ## Quick start
 
